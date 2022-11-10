@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>damon | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="JVM专题1. JVM的组成部分主要分为三部分，类加载子系统，字节码执行引擎，运行时数据区。 其中类加载子系统是负责将类的.class文件加载到jvm内存的，一个类的生命周期是加载，验证，准备，解析，初始化，使用，卸载，其中验证是校验.class文件是否符合规范，准备是为静态变量分配内存空间，此时的值为0，false等默认值，解析，又称静态链接，是将符号引用转换为直接引用，将方法名称等字面量转化为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="damon">
+<meta property="og:url" content="http://example.com/2022/11/09/damon/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JVM专题1. JVM的组成部分主要分为三部分，类加载子系统，字节码执行引擎，运行时数据区。 其中类加载子系统是负责将类的.class文件加载到jvm内存的，一个类的生命周期是加载，验证，准备，解析，初始化，使用，卸载，其中验证是校验.class文件是否符合规范，准备是为静态变量分配内存空间，此时的值为0，false等默认值，解析，又称静态链接，是将符号引用转换为直接引用，将方法名称等字面量转化为">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/damon/image-20220829144631681-1667988737359.png">
+<meta property="article:published_time" content="2022-11-09T10:00:04.000Z">
+<meta property="article:modified_time" content="2022-11-09T10:12:18.802Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/damon/image-20220829144631681-1667988737359.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +75,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-damon" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-damon" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/11/09/damon/" class="article-date">
   <time class="dt-published" datetime="2022-11-09T10:00:04.000Z" itemprop="datePublished">2022-11-09</time>
@@ -84,8 +88,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/09/damon/">damon</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      damon
     </h1>
   
 
@@ -142,62 +146,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/09/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-11-09T08:55:32.748Z" itemprop="datePublished">2022-11-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/09/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2022/11/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/09/hello-world/" data-id="cla9f1nr60000xsew4r0n9xw4" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
